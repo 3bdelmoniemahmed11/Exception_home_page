@@ -305,7 +305,7 @@ li, ul {
 }
 .fun-staff .fun-title
 {
-    padding: 29px 0 ;
+    padding: 29px 0px ;
     color: #e7512f;
     background-color: #fff;
     font-size: 40px;
@@ -315,6 +315,19 @@ li, ul {
 
 .fun-staff .fun-title span {
     color: #333;
+}
+@media (max-width: 992px)
+{
+    .fun-staff .col-lg-2
+    {
+        width: 50%;
+        margin-bottom: 40px;
+        margin-top:40px ;
+    }
+    .fun-staff .fun-title
+    {
+        font-size: 35px;
+    }
 }
 /*end fun staff */
 /*start recent projects */
@@ -338,7 +351,58 @@ li, ul {
     text-transform: uppercase;
     font-size: 12px !important;
     text-shadow: 1px 1px 1px rgba(0,0,0,.5);
-    letter-spacing: .8px
+    letter-spacing: .8px;
+    margin-bottom:20px;
 }
-
+.home-Gallery .portfolio-item {
+    margin: 0 15px;
+    background-color: #eee;
+    
+}
+.portfolio-item::after
+{
+    display: block;
+    border-top:2px solid #fff ;
+    height: 3px;
+    content: " ";
+    background-color: #e7512f;
+}
+.img-holder {
+    position: relative;
+    overflow: hidden;
+    margin: 0px 0px 15px;
+    cursor: pointer;
+}
+.img-holder img
+{
+    width: 100%;
+    height: auto;
+    transition: all 1s ease-out;
+}
+.name-holder {
+    padding: 0 15px 10px;
+}
+.project-name {
+    display: table;
+    margin: auto;
+    font-weight: 700;
+    font-size: 16px;
+    color: #e7512f;
+}
+.project-option{
+    margin-top: 4px;
+    display: block;
+    text-align:center;
+    font-size: 13px;
+}
+.project-name:hover
+{
+    color :#333 !important;
+     text-decoration-line: none !important;
+}
+.home-Gallery .slick-prev ,.home-Gallery .slick-next
+{
+    margin-top: 10px;
+}
 /*end recent projects */
+
