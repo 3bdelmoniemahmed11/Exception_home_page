@@ -1,0 +1,267 @@
+body{
+    position: relative;
+    color: #777 !important;
+    font-size: 13px !important;
+    line-height: 1.428571429;
+    font-family: "Open Sans",Arial,sans-serif;
+    height: 2000px;
+}
+.welcome
+{
+    padding:80px 0;
+    text-align: center;
+}
+
+.block-head {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0 0 20px;
+    border-bottom: 1px #e2e2e2 solid;
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    color: #e7512f;
+    }
+.block-head  span
+{
+    font-size: 22px ;
+}
+.block-head:before {
+    position: absolute;
+    bottom: -3px;
+    width: 35px;
+    height: 5px;
+    content: "";
+    background-color: #e7512f;
+    left: 50%;
+    margin-left: -17.5px
+}
+
+.block-head:after {
+    position: absolute;
+    bottom: -1px;
+    width: 80px;
+    height: 1px;
+    content: "";        
+    background-color: #e7512f;
+    left: 50%;
+    margin-left: -40px
+}
+p
+{
+    margin-bottom: 0 ;
+    line-height: 22px;
+    font-size: 13px;
+}
+/*start service box*/
+.gry-bg
+{
+    background: #eee;
+}
+.top-box 
+{
+    padding-bottom: 80px;
+    padding-top:30px;
+   
+}
+.top-box i.fa {
+    width:103px;
+    height: 103px;
+    text-align: center;
+    line-height: 95px;
+    font-size: 38px; 
+    display: table;
+    margin: 0 auto 30px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    -moz-box-shadow: inset 0 0 13px rgba(0,0,0,.4);
+    -webkit-box-shadow: inset 0 0 13px rgba(0,0,0,.4);
+     box-shadow: inset 0 0 13px rgba(0,0,0,.4);
+     color: #e7512f;
+}
+.top-box h3 span {
+    display: block;
+    font-size: 19px;
+    font-weight: 100;
+    text-transform: none;
+    margin-bottom: -5px;
+}
+.top-box h3 {
+    padding: 0 15px 10px;
+    font-size: 23px;
+    color: #777;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.top-box p {
+    padding: 0 15px;
+}
+
+.top-box .btn {
+    display: table;
+    margin: 30px auto 0;
+    background: #fff;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    font-size: 11px;
+    color: #e7512f;
+}
+.top-box:hover i 
+{
+    color: white;
+    background-color: #e7512f;
+}
+.top-box:hover h3 ,
+.top-box:hover p
+{
+    color:#fff;
+}
+.top-box:hover
+{
+    background-color: #e7512f;
+}
+
+.top-box .btn:hover
+{
+    color: #777;
+}
+
+
+/*end service box*/
+/*start wrapper section */
+.sectionwrapper
+{
+    padding:30px 0 ;
+    margin-top:15px;
+}
+li, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.level-name {
+    font-size: 15px;
+    font-style: normal;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #777;
+}
+.level-out {
+    position: relative;
+    margin: 0 10px 25px 0;
+    padding: 0;
+    background: #E7E7E7;
+}
+.level-out span {
+    background: #E7E7E7;
+    display: block;
+    padding: 0 10px;
+    height: 21px;
+    width: 54px;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #333;
+    line-height: 21px;
+    position: absolute; 
+}
+
+.level-in
+{
+    background-color: #e7512f;
+    color: #fff;
+    height: 21px;
+}
+.level-out span:before {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 10.5px 0 10.5px 10px;
+    border-color: transparent transparent transparent #E7E7E7;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    right: -10px;
+}
+.sectionWrapper
+{
+    padding:70px 0;
+}
+.slick-prev::before {
+    content: "\f104" ;
+}
+.slick-next:before {
+    content: "\f105";
+}
+.slick-next, .slick-prev {
+    background: #777 ;
+    color: #eee ;
+}
+.slick-prev {
+    right: 32px;
+    top: -60px;
+}
+.slick-next, .slick-prev {
+    position: absolute ;
+    font-size: 0 ;
+    cursor: pointer ;
+    border: none ;
+    outline: 0 ;
+    text-align: center ;
+    width: 28px ;
+    height: 28px ;
+    border-radius: 3px ;
+}
+.slick-next:before, .slick-prev:before {
+    font-family: FontAwesome ;
+    font-size: 18px ;
+    line-height: 20px ;
+}
+.slick-next {
+    right: 0;
+    top: -60px;
+}
+.slick-next:hover ,.slick-prev:hover
+{
+    background-color: #e7512f;
+    color: #fff;
+}
+.clients>div a {
+    margin: 0 15px;
+    display: block;
+    border-bottom: 1px #ddd solid;
+    padding: 10px;
+    text-align: center;
+}
+.white-bg
+{
+    background: #fff;
+}
+.white-bg img
+{
+    max-width: 100%;
+}
+.white-bg:hover
+{
+    border-bottom: 1px #e7512f solid;
+}
+/*start web responsive*/
+.list-right li::before
+{
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 10px;
+    font-size: 13px;
+    color: #e7512f;
+    
+}
+.list-right li
+{
+    padding: 0 0 10px 10px;
+}
+.sectionWrapper .pc img
+{
+    width: 360px;
+    height: 281.18px;
+}
+/*end web responsive*/
