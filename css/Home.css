@@ -4,7 +4,7 @@ body{
     font-size: 13px !important;
     line-height: 1.428571429;
     font-family: "Open Sans",Arial,sans-serif;
-    height: 2000px;
+    height: 4000px;
 }
 .welcome
 {
@@ -132,7 +132,7 @@ p
 /*start wrapper section */
 .sectionwrapper
 {
-    padding:30px 0 ;
+    padding:80px 0 ;
     margin-top:15px;
 }
 li, ul {
@@ -265,3 +265,80 @@ li, ul {
     height: 281.18px;
 }
 /*end web responsive*/
+/* start fun staff*/
+.fun-staff-o
+{
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    background: url("../images/block-bg-2.jpg") fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: auto;
+}
+.fun-staff
+{
+   background-color: rgba(232,82,47,0.7);
+   height: inherit;
+}
+.fun-staff .fun-number {
+    padding: 0;
+    font-size: 35px;
+    color: #444;
+    background-color: #fff;
+}
+.fun-staff .fun-text {
+    padding: 23px 0;
+    font-size: 20px;
+    background-color: #e7512f;
+    color: #fff;
+}
+.fun-staff .fun-icon
+{
+    padding: 5px 0;
+    background-color: #fff;
+    font-size: 30px;
+    color: #e7512f;
+
+}
+.fun-staff .fun-title
+{
+    padding: 29px 0 ;
+    color: #e7512f;
+    background-color: #fff;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.fun-staff .fun-title span {
+    color: #333;
+}
+/*end fun staff */
+/*start recent projects */
+.heading {
+    font-weight: 800;
+    color: #e7512f;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+}
+.heading span {
+    color: #777;
+    font-weight: 100;
+}
+.browse_btn
+{
+    color: #fff !important;
+    background-color: #777 !important;
+    border-color: transparent;
+    text-transform: uppercase;
+    font-size: 12px !important;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.5);
+    letter-spacing: .8px
+}
+
+/*end recent projects */
