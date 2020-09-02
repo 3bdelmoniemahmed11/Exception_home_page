@@ -54,3 +54,8 @@ $('.home-Gallery').slick({
       }]
 })
 })
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip(
+    Animation
+  )
+})
