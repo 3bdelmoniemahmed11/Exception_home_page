@@ -37,6 +37,7 @@ a:hover
     float: left;
     border-left: 1px #eee solid;
     height: 83px;
+    transition: all 0.1s ease-in;
 }
 .top-nav>ul>li>a {
     display: block;
@@ -62,13 +63,22 @@ a:hover
 {
     color: #fff;
 }
-.top-nav>ul li a span .menu-hint {
+.menu-hint {
     position: absolute;
     top: 34px;
     right: 4px;
     left: auto;
     background-color: #5cb85c
 
+}
+.top-nav ul.def-effect li li .menu-hint
+{
+    top:5px;
+    right:auto;
+}
+.menu-hint:hover
+{
+    background-color: #439943;
 }
 .menu-hint {
     font-size: 9px;
@@ -78,6 +88,10 @@ a:hover
     white-space: nowrap;
     border-radius: .25em;
     color: #fff;
+}
+.top-nav .def-effect>li:hover
+{
+    padding-top:5px;  
 }
 .top-nav>ul.def-effect li ul {
     height: 0;
@@ -89,20 +103,22 @@ a:hover
     min-width: 180px;
     left:-5px;
     max-width: 609px;
-    z-index: 999999999;
+    z-index: 1;
+    white-space: nowrap;
 }
 .top-nav>ul.def-effect li:hover ul
 {
     height: auto;
     opacity: 1;
-    visibility: visible;
+    visibility: visible; 
 }
 .top-nav>ul.def-effect>li>ul>li {
+    position: relative;
     border-bottom: 1px #d03d17 solid;
     background:#e7512f;
     padding:10px;
     opacity: 0;
-    font-size: 15px;
+    font-size: 14px;
     -moz-transform: rotateY(90deg);
     -ms-transform: rotateY(90deg);
     -o-transform: rotateY(90deg);
@@ -121,18 +137,14 @@ a:hover
     -ms-transform: none;
     -o-transform:none;
     -webkit-transform:none; 
-    transform:none;
+     transform:none;
 
 }   
-.top-nav li li:nth-of-type(1)
+.top-nav .def-effect #home1
 {
     background: #a7290a !important ;
-    margin-bottom: 0.5px;
 }
-.top-nav li li:nth-of-type(6)
-{
-    margin-top:1px;
-}
+
 .top-nav li li a
 {
     color: #fff;
@@ -155,8 +167,68 @@ a:hover
     -ms-transform: skew(-35deg,0);
     -o-transform: skew(-35deg,0);
     -webkit-transform: skew(-35deg,0);
-    transform: skew(-35deg,0);
+     transform: skew(-35deg,0);
 }
+
+.top-nav li li.haschildern::after {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    color: #fff;
+    content: "\f105";
+    font-family: FontAwesome;
+}
+.top-nav ul.def-effect li li li {
+    border-bottom: 1px #d03d17 solid;
+    background:#e7512f;
+    padding:10px;
+    font-size: 14px;
+    opacity: 0;
+    z-index:-1;
+    -moz-transform: rotateX(90deg);
+    -ms-transform: rotateX(90deg);
+    -o-transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+     transform: rotateX(90deg);
+     transition: opacity .5s,transform .4s;
+    -moz-transition: opacity .5s,-moz-transform .4s;
+    -ms-transition: opacity .5s,-ms-transform .4s;
+    -o-transition: opacity .5s,-o-transform .4s;
+    -webkit-transition: opacity .5s,-webkit-transform .4s;
+}
+.top-nav ul.def-effect li li  i
+{
+    margin-right:5px;
+    font-size: 12px;
+}
+.top-nav ul.def-effect li li>ul {
+    height: 0;
+    left: 100%;
+    top:0px;   
+}
+
+.top-nav ul.def-effect li li:hover>ul {
+    height: auto
+}
+.top-nav ul.def-effect li li:hover>ul>li {
+    opacity: 1;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    -webkit-transform: none;
+    transform: none
+}
+.top-nav ul.def-effect li.margin-down
+{
+    margin-bottom:0.8px;
+}
+.top-nav ul.def-effect li li.margin-down
+{
+    margin-bottom:0.8px;
+}
+
+
+
 /*end header */
 .welcome
 {

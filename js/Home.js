@@ -80,6 +80,17 @@ $('.people').slick({
     }
   }]
 })
+});
 
+const haschildern=document.querySelectorAll('.haschildern');
+for( let i=0;i<haschildern.length;i++)
+{
+  haschildern[i].addEventListener('mouseover',()=>{
+    haschildern[i].classList.add('current');
+  })
+  haschildern[i].addEventListener('mouseleave',()=>{
+    haschildern[i].classList.remove('current');
+  })
+}
 
-})
+  
