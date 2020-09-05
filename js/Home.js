@@ -83,14 +83,54 @@ $('.people').slick({
 });
 
 const haschildern=document.querySelectorAll('.haschildern');
+const shortcodes_box=document.getElementById('shortcodes-box');
+const div_mega=document.getElementsByClassName('div-mega');
+const search_icon=document.getElementById('search-icon');
+const search_box=document.getElementsByClassName('search-box');
+const search_span=document.getElementsByClassName('fa fa-search')
+
+
+
 for( let i=0;i<haschildern.length;i++)
 {
   haschildern[i].addEventListener('mouseover',()=>{
+    
     haschildern[i].classList.add('current');
+   
   })
   haschildern[i].addEventListener('mouseleave',()=>{
     haschildern[i].classList.remove('current');
   })
 }
 
+shortcodes_box.addEventListener('mouseover',()=>
+{
+  div_mega[0].style.opacity=1;
+  div_mega[0].style.visibility='visible';
+
+});
+shortcodes_box.addEventListener('mouseleave',()=>
+{
+  div_mega[0].style.opacity=0;
+  div_mega[0].style.visibility='hidden';
+
+});
+search_icon.addEventListener('click',()=>{
+   
+  if( search_box[0].style.opacity==0)
+  {
+    search_span[0].style.color='#fff';
+    search_icon.style.background='#e7512f';
+    search_box[0].style.visibility='visible';
+    search_box[0].style.opacity=1;
+
+  }else
+  {
+    search_icon.style.background='';
+    search_span[0].style.color='';
+    search_box[0].style.visibility='hidden';
+    search_box[0].style.opacity=0;
+  }
   
+})
+
