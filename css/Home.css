@@ -13,6 +13,7 @@ a:hover
 .top-nav
 {
     position: relative;
+    
 }
 .top-head {
     position: relative;
@@ -369,6 +370,29 @@ a:hover
     cursor: pointer;
 }
 /*end header */
+/* start slider*/
+.carousel-item >img
+{
+    height: 510px;
+}
+.carousel-item h2
+{
+    color: #e7512f; 
+    text-transform: uppercase;
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom:20px;
+  
+}
+.carousel-item .pc-left
+{
+    margin-right:-35px;
+}
+.carousel-item .pc-right
+{
+    margin-left:-35px;
+}
+/*end slider*/
 .welcome
 {
     padding:80px 0;
